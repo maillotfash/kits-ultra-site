@@ -1,0 +1,8 @@
+/kits-ultra-site
+├── index.html           ← Page d'accueil
+├── style.css            ← Styles (design)
+├── script.js            ← (Optionnel pour effets)
+├── /assets              ← Images (logo, bannières)
+└── /pages
+    ├── produits.html    ← Liste des produits
+    └── contact.html     ← Page de contact
