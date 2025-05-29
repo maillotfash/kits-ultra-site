@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon compte - UltraKits</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const account = params.get("accountnumber");
+    const country = params.get("country");
+    window.onload = function () {
+      document.getElementById("account").textContent = account;
+      document.getElementById("country").textContent = country;
+    };
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Bienvenue sur votre tableau de bord</h1>
+    <p><strong>Numéro de compte :</strong> <span id="account"></span></p>
+    <p><strong>Pays :</strong> <span id="country"></span></p>
+    <a href="index.html">Se déconnecter</a>
+  </div>
+</body>
+</html>
